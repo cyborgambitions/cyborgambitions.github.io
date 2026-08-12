@@ -110,11 +110,6 @@ h2 {
 .facts { list-style: none; padding: 0; margin: 1.5rem 0 0; }
 .facts li { display: grid; grid-template-columns: 8.5rem 1fr; gap: .5rem; padding: .45rem 0; border-top: 1px solid var(--line); }
 .facts span { color: var(--muted); }
-.facts li.fact-center {
-  grid-template-columns: 1fr;
-  justify-items: center;
-  text-align: center;
-}
 
 .card {
   display: grid; grid-template-columns: 1.1fr 1fr;
