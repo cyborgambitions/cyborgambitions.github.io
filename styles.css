@@ -94,22 +94,37 @@ h1 em { font-style: italic; color: var(--accent); }
   max-width: calc(var(--max) + 12vw);
   margin: 0 auto;
 }
-.about-row {
-  display: grid;
-  grid-template-columns: minmax(220px, 320px) minmax(0, 1fr);
-  gap: 3rem;
+.about {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  margin-top: 2rem;
+  text-align: center;
+}
+.about-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.75rem;
+  margin: 2rem auto 0;
   width: 100%;
+  max-width: 40rem;
 }
 .about figure {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 320px;
+  margin: 0;
+  width: min(280px, 70vw);
 }
 .about figure img {
   width: 100%; aspect-ratio: 3/4; object-fit: cover;
   border-radius: 4px;
+}
+.about-row > div {
+  width: 100%;
+}
+.about .facts {
+  max-width: 28rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
 }
 h2 {
   font-family: var(--serif);
@@ -153,10 +168,9 @@ footer {
 
 @media (max-width: 860px) {
   .nav nav { display: none; }
-  .about-row, .card, .card.reverse, .grid, .grid.three {
+  .card, .card.reverse, .grid, .grid.three {
     grid-template-columns: 1fr;
   }
-  .about-row figure { margin: 0 auto; }
   .card.reverse img { order: 0; }
   .hero { min-height: 78vh; }
 }
