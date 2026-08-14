@@ -23,7 +23,7 @@ Slug (required): link_mindset
 Name on page: Melissa
 Handle: @link_mindset
 GitHub: https://github.com/cyborgambitions
-Line: I make the cislunar economy legible.
+Line: A place to come back into time that heals. Kairos · coherence · frequency.
 Sign-off: Build with me. Ad Astra.
 Educational only — not financial advice.
 
