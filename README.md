@@ -2,6 +2,9 @@
 
 One-page marketing site for lunar economy / science / tech.
 
+Lives at **https://cyborgambitions.github.io/**  
+Not the astro-metaphysics project. That is `link-mindset` → grok.me.
+
 Open `index.html` in a browser. That is the whole site.
 
 ## What this site is for
