@@ -94,9 +94,18 @@ h1 em { font-style: italic; color: var(--accent); }
   max-width: calc(var(--max) + 12vw);
   margin: 0 auto;
 }
-.about {
-  display: grid; grid-template-columns: minmax(220px, 340px) 1fr;
-  gap: 3rem; align-items: center;
+.about-row {
+  display: grid;
+  grid-template-columns: minmax(220px, 320px) minmax(0, 1fr);
+  gap: 3rem;
+  align-items: center;
+  margin-top: 2rem;
+  width: 100%;
+}
+.about figure {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 320px;
 }
 .about figure img {
   width: 100%; aspect-ratio: 3/4; object-fit: cover;
@@ -144,9 +153,10 @@ footer {
 
 @media (max-width: 860px) {
   .nav nav { display: none; }
-  .about, .card, .card.reverse, .grid, .grid.three {
+  .about-row, .card, .card.reverse, .grid, .grid.three {
     grid-template-columns: 1fr;
   }
+  .about-row figure { margin: 0 auto; }
   .card.reverse img { order: 0; }
   .hero { min-height: 78vh; }
 }
