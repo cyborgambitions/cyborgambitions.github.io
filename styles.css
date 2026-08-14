@@ -111,10 +111,14 @@ h1 em { font-style: italic; color: var(--accent); }
 }
 .about figure {
   margin: 0;
-  width: min(280px, 70vw);
+  width: 100%;
+  max-width: 40rem;
 }
 .about figure img {
-  width: 100%; aspect-ratio: 3/4; object-fit: cover;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
   border-radius: 4px;
 }
 .about-row > div {
